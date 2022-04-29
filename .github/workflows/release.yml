@@ -14,10 +14,13 @@ jobs:
         with:
           python-version: '3.10'
           architecture: x64
+      - name: poetry
+        uses: snok/install-poetry@v1
       - name: build
         run: |
           mkdir -p build
-          python src/__main__.py
+          poetry install
+          poetry run python src/__main__.py
       - name: archive
         run: |
           tar --directory build/ -cvf artifact.tar .

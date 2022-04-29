@@ -1,10 +1,11 @@
-import datetime
-import hashlib
-import os.path
+import os
+import pathlib
+
+import gb
 
 
 class Index:
-    def __init__(self, filename: str):
+    def __init__(self, filename: pathlib.Path):
         self.filename = filename
         self.pages = []
 
@@ -32,11 +33,11 @@ class Index:
 
 
 def main(dir_in: str = "data", dir_out: str = "build"):
-    dt = datetime.datetime.today().strftime("%Y-%m-%d-%H-%M-%S")
-    hs = hashlib.sha512(dt.encode(encoding="utf-8")).hexdigest()
-    index = Index(os.path.join(dir_out, "index.html"))
-    filename = f"{dt}.txt"
-    with open(os.path.join(dir_out, filename), "w") as f:
-        f.write(hs)
-        index.add(filename)
+    index = Index(pathlib.Path(dir_out, "index.html"))
+    for in_filename, result in gb.pws.process(dir_in):
+        out_filename = pathlib.Path(in_filename).relative_to(dir_in).with_suffix(".txt")
+        os.makedirs(pathlib.Path(dir_out).joinpath(out_filename).parent, exist_ok=True)
+        with open(pathlib.Path(dir_out).joinpath(out_filename), "w") as f:
+            f.write(str(result))
+        index.add(out_filename)
     index.omit()
