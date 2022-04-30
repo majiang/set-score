@@ -1,0 +1,90 @@
+{
+  "date": "2021-12-18",
+  "scores":
+  [
+    {"result": [
+      {"player": "yuka", "seat": "east", "point": -93},
+      {"player": "dalong", "seat": "south", "point": 18},
+      {"player": "tomii", "seat": "west", "point": 63},
+      {"player": "mirai", "seat": "north", "point": 12}
+    ]},
+    {"result": [
+      {"player": "yuanyao", "seat": "east", "point": 360},
+      {"player": "sp", "seat": "south", "point": -182},
+      {"player": "rdr", "seat": "west", "point": -81},
+      {"player": "cai", "seat": "north", "point": -97}
+    ]},
+    {"result": [
+      {"player": "dalong", "seat": "east", "point": 59},
+      {"player": "cai", "seat": "south", "point": -53},
+      {"player": "yuka", "seat": "west", "point": -27},
+      {"player": "rdr", "seat": "north", "point": 21}
+    ]},
+    {"result": [
+      {"player": "yuanyao", "seat": "east", "point": 28},
+      {"player": "tomii", "seat": "south", "point": 67},
+      {"player": "mirai", "seat": "west", "point": -50},
+      {"player": "okamontas", "seat": "north", "point": -45}
+    ]},
+    {"result": [
+      {"player": "tomii", "seat": "east", "point": 13},
+      {"player": "yuka", "seat": "south", "point": -51},
+      {"player": "cai", "seat": "west", "point": 80},
+      {"player": "okamontas", "seat": "north", "point": -42}
+    ]},
+    {"result": [
+      {"player": "sp", "seat": "east", "point": -59},
+      {"player": "mirai", "seat": "south", "point": 151},
+      {"player": "dalong", "seat": "west", "point": -67},
+      {"player": "yuanyao", "seat": "north", "point": -25}
+    ]},
+    {"result": [
+      {"player": "cai", "seat": "east", "point": -178},
+      {"player": "rdr", "seat": "south", "point": 227},
+      {"player": "mirai", "seat": "west", "point": -69},
+      {"player": "tomii", "seat": "north", "point": 20}
+    ]},
+    {"result": [
+      {"player": "sp", "seat": "east", "point": -87},
+      {"player": "dalong", "seat": "south", "point": -115},
+      {"player": "yuka", "seat": "west", "point": 135},
+      {"player": "okamontas", "seat": "north", "point": 67}
+    ]},
+    {"result": [
+      {"player": "rdr", "seat": "east", "point": 146},
+      {"player": "okamontas", "seat": "south", "point": -164},
+      {"player": "yuka", "seat": "west", "point": 73},
+      {"player": "yuanyao", "seat": "north", "point": -55}
+    ]},
+    {"result": [
+      {"player": "cai", "seat": "east", "point": 199},
+      {"player": "dalong", "seat": "south", "point": -15},
+      {"player": "sp", "seat": "west", "point": -141},
+      {"player": "tomii", "seat": "north", "point": -43}
+    ]},
+    {"result": [
+      {"player": "rdr", "seat": "east", "point": -71},
+      {"player": "okamontas", "seat": "south", "point": -67},
+      {"player": "dalong", "seat": "west", "point": 150},
+      {"player": "mirai", "seat": "north", "point": -12}
+    ]},
+    {"result": [
+      {"player": "yuanyao", "seat": "east", "point": 150},
+      {"player": "yuka", "seat": "south", "point": -43},
+      {"player": "tomii", "seat": "west", "point": -34},
+      {"player": "sp", "seat": "north", "point": -73}
+    ]},
+    {"result": [
+      {"player": "mirai", "seat": "east", "point": 72},
+      {"player": "cai", "seat": "south", "point": -49},
+      {"player": "okamontas", "seat": "west", "point": 74},
+      {"player": "sp", "seat": "north", "point": -97}
+    ]},
+    {"result": [
+      {"player": "rdr", "seat": "east", "point": 170},
+      {"player": "yuanyao", "seat": "south", "point": 31},
+      {"player": "dalong", "seat": "west", "point": -144},
+      {"player": "tomii", "seat": "north", "point": -57}
+    ]}
+  ]
+}
