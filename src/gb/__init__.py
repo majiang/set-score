@@ -35,7 +35,7 @@ class GameScore:
             point_sum += player_score.point
         assert seats == set(("east", "south", "west", "north")) or seats == set(None)
         assert len(players) == 4
-        assert point_sum == 0
+        assert point_sum == 0, f"non-zero-sum points: {[player_score.point for player_score in self.result]}"
 
 
 @dataclasses.dataclass
