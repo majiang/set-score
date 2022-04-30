@@ -34,10 +34,12 @@ class Index:
 
 def main(dir_in: str = "data", dir_out: str = "build"):
     index = Index(pathlib.Path(dir_out, "index.html"))
-    for in_filename, result in gb.pws.process(dir_in):
+    for in_filename, score, result in gb.pws.process(dir_in):
         out_filename = pathlib.Path(in_filename).relative_to(dir_in).with_suffix(".txt")
         os.makedirs(pathlib.Path(dir_out).joinpath(out_filename).parent, exist_ok=True)
         with open(pathlib.Path(dir_out).joinpath(out_filename), "w") as f:
+            f.write(str(score))
+            f.write("\n\n")
             f.write(str(result))
         index.add(out_filename)
     index.omit()
