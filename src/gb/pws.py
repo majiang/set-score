@@ -10,4 +10,6 @@ def process(dir_in: str):
             dir_in, "gb", "pws", "*", "*.json"  # rule  # regulation  # year?  # date?
         )
     ):
-        yield filename, gb.read_json_validate(filename)
+        set_score = gb.read_json_validate(filename)
+        result = gb.DayResult.from_set_score(set_score)
+        yield filename, set_score, result
