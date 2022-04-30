@@ -1,0 +1,30 @@
+{
+  "date": "2022-04-29",
+  "scores":
+  [
+    {"result": [
+      {"player": "zqmted", "seat": "north", "point": 86},
+      {"player": "lisy", "seat": "west", "point": -56},
+      {"player": "dalong", "seat": "south", "point": -37},
+      {"player": "yuanyao", "seat": "east", "point": 7}
+    ]},
+    {"result": [
+      {"player": "zqmted", "seat": "west", "point": 154},
+      {"player": "lisy", "seat": "east", "point": -156},
+      {"player": "dalong", "seat": "south", "point": -60},
+      {"player": "yuanyao", "seat": "north", "point": 62}
+    ]},
+    {"result": [
+      {"player": "zqmted", "seat": "north", "point": -155},
+      {"player": "lisy", "seat": "west", "point": 23},
+      {"player": "dalong", "seat": "east", "point": 76},
+      {"player": "yuanyao", "seat": "south", "point": 56}
+    ]},
+    {"result": [
+      {"player": "zqmted", "seat": "west", "point": 162},
+      {"player": "lisy", "seat": "north", "point": -90},
+      {"player": "dalong", "seat": "south", "point": 69},
+      {"player": "yuanyao", "seat": "east", "point": -141}
+    ]}
+  ]
+}
