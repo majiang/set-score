@@ -1,0 +1,34 @@
+{
+  "date": "2022-05-22",
+  "variant":
+  {
+    "flower": true
+  },
+  "scores":
+  [
+    {"result": [
+      {"player": "dalong", "seat": "east","point": 26},
+      {"player": "yuanyao", "seat": "south", "point": -98},
+      {"player": "cupfree", "seat": "west", "point": 192},
+      {"player": "zqmted", "seat": "north", "point": -120}
+    ]},
+    {"result": [
+      {"player": "dalong", "seat": "south","point": 279},
+      {"player": "yuanyao", "seat": "west", "point": -131},
+      {"player": "cupfree", "seat": "east", "point": -221},
+      {"player": "zqmted", "seat": "north", "point": 73}
+    ]},
+    {"result": [
+      {"player": "dalong", "seat": "north","point": -46},
+      {"player": "yuanyao", "seat": "south", "point": 252},
+      {"player": "cupfree", "seat": "west", "point": -60},
+      {"player": "zqmted", "seat": "east", "point": -146}
+    ]},
+    {"result": [
+      {"player": "dalong", "seat": "east","point": 16},
+      {"player": "yuanyao", "seat": "north", "point": -10},
+      {"player": "cupfree", "seat": "south", "point": -130},
+      {"player": "zqmted", "seat": "west", "point": 124}
+    ]}
+  ]
+}
