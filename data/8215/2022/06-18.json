@@ -1,0 +1,16 @@
+{
+  "date": "2022-06-18",
+  "variant":
+  {
+    "length": "half"
+  },
+  "scores":
+  [
+    {"result": [
+      {"player": "tomii", "point": -12},
+      {"player": "yuanyao", "point": -106},
+      {"player": "chibi", "point": 86},
+      {"player": "dalong", "point": 32}
+    ]}
+  ]
+}

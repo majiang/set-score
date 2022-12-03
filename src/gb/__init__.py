@@ -3,7 +3,6 @@ import datetime
 import json
 import logging
 import typing
-from typing import Literal
 
 import dacite
 
@@ -11,7 +10,7 @@ from gb import pws
 
 logger = logging.getLogger(__name__)
 
-Seat = Literal["east", "south", "west", "north", None]
+Seat = typing.Literal["east", "south", "west", "north", None]
 
 
 @dataclasses.dataclass
@@ -39,8 +38,14 @@ class GameScore:
 
 
 @dataclasses.dataclass
+class Variant:
+    flower: typing.Optional[bool]
+    reseat: typing.Optional[typing.Literal[1, 3]]
+
+@dataclasses.dataclass
 class SetScore:
     date: typing.Optional[datetime.date]
+    variant: typing.Optional[Variant]
     scores: list[GameScore]
 
     def validate(self):

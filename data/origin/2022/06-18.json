@@ -1,0 +1,24 @@
+{
+  "date": "2022-06-18",
+  "variant":
+  {
+    "length": "half",
+    "addbase": 0,
+    "minhu": 10
+  },
+  "scores":
+  [
+    {"result": [
+      {"player": "tomii", "point": -345},
+      {"player": "yuanyao", "point": 195},
+      {"player": "chibi", "point": 5},
+      {"player": "dalong", "point": 145}
+    ]},
+    {"result": [
+      {"player": "tomii", "point": -655},
+      {"player": "yuanyao", "point": -160},
+      {"player": "chibi", "point": 255},
+      {"player": "dalong", "point": 560}
+    ]}
+  ]
+}
