@@ -17,8 +17,8 @@ Seat = Literal["east", "south", "west", "north", None]
 @dataclasses.dataclass
 class PlayerScore:
     player: str
-    seat: Seat
     point: int
+    seat: Seat = None
 
 
 @dataclasses.dataclass
@@ -33,7 +33,7 @@ class GameScore:
             seats.add(player_score.seat)
             players.add(player_score.player)
             point_sum += player_score.point
-        assert seats == set(("east", "south", "west", "north")) or seats == set(None)
+        assert seats == set(("east", "south", "west", "north")) or seats == set([None])
         assert len(players) == 4
         assert point_sum == 0, f"non-zero-sum points: {[player_score.point for player_score in self.result]}"
 
