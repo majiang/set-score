@@ -16,8 +16,8 @@ Seat = typing.Literal["east", "south", "west", "north", None]
 @dataclasses.dataclass
 class PlayerScore:
     player: str
-    seat: Seat
     point: int
+    seat: Seat = None
 
 
 @dataclasses.dataclass

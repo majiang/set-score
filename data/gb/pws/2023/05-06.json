@@ -1,0 +1,101 @@
+{
+    "date": "2023-05-06",
+    "scores": [
+        {
+            "result": [
+                {
+                    "player": "yuanyao",
+                    "point": 142,
+                    "seat": "east"
+                },
+                {
+                    "player": "dalong",
+                    "point": -187,
+                    "seat": "south"
+                },
+                {
+                    "player": "chibi",
+                    "point": 66,
+                    "seat": "west"
+                },
+                {
+                    "player": "okamontas",
+                    "point": -21,
+                    "seat": "north"
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "yuanyao",
+                    "point": 40,
+                    "seat": "south"
+                },
+                {
+                    "player": "dalong",
+                    "point": -32,
+                    "seat": "north"
+                },
+                {
+                    "player": "chibi",
+                    "point": 45,
+                    "seat": "east"
+                },
+                {
+                    "player": "okamontas",
+                    "point": -53,
+                    "seat": "west"
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "yuanyao",
+                    "point": -129,
+                    "seat": "north"
+                },
+                {
+                    "player": "dalong",
+                    "point": -168,
+                    "seat": "west"
+                },
+                {
+                    "player": "chibi",
+                    "point": 240,
+                    "seat": "east"
+                },
+                {
+                    "player": "okamontas",
+                    "point": 57,
+                    "seat": "south"
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "yuanyao",
+                    "point": -87,
+                    "seat": "north"
+                },
+                {
+                    "player": "dalong",
+                    "point": 116,
+                    "seat": "south"
+                },
+                {
+                    "player": "chibi",
+                    "point": -51,
+                    "seat": "east"
+                },
+                {
+                    "player": "okamontas",
+                    "point": 22,
+                    "seat": "west"
+                }
+            ]
+        }
+    ]
+}

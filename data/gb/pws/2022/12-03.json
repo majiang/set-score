@@ -1,0 +1,296 @@
+{
+    "date": "2022-12-03",
+    "variant": {
+        "flower": false
+    },
+    "scores": [
+        {
+            "result": [
+                {
+                    "player": "chibi",
+                    "seat": "east",
+                    "point": -215
+                },
+                {
+                    "player": "dalong",
+                    "seat": "south",
+                    "point": 154
+                },
+                {
+                    "player": "hiroki",
+                    "seat": "west",
+                    "point": 84
+                },
+                {
+                    "player": "yuanyao",
+                    "seat": "north",
+                    "point": -23
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "yoteru",
+                    "seat": "east",
+                    "point": 69
+                },
+                {
+                    "player": "jj1lis",
+                    "seat": "south",
+                    "point": -48
+                },
+                {
+                    "player": "jaimo",
+                    "seat": "west",
+                    "point": -208
+                },
+                {
+                    "player": "tomii",
+                    "seat": "north",
+                    "point": 187
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "hiroki",
+                    "seat": "east",
+                    "point": 307
+                },
+                {
+                    "player": "tomii",
+                    "seat": "south",
+                    "point": -48
+                },
+                {
+                    "player": "yuanyao",
+                    "seat": "west",
+                    "point": -113
+                },
+                {
+                    "player": "jaimo",
+                    "seat": "north",
+                    "point": -146
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "dalong",
+                    "seat": "east",
+                    "point": 2
+                },
+                {
+                    "player": "yoteru",
+                    "seat": "south",
+                    "point": 59
+                },
+                {
+                    "player": "chibi",
+                    "seat": "west",
+                    "point": 98
+                },
+                {
+                    "player": "jj1lis",
+                    "seat": "north",
+                    "point": -159
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "yoteru",
+                    "seat": "east",
+                    "point": 242
+                },
+                {
+                    "player": "jj1lis",
+                    "seat": "south",
+                    "point": -129
+                },
+                {
+                    "player": "hiroki",
+                    "seat": "west",
+                    "point": -168
+                },
+                {
+                    "player": "yuanyao",
+                    "seat": "north",
+                    "point": 55
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "tomii",
+                    "seat": "east",
+                    "point": -46
+                },
+                {
+                    "player": "chibi",
+                    "seat": "south",
+                    "point": 88
+                },
+                {
+                    "player": "dalong",
+                    "seat": "west",
+                    "point": 11
+                },
+                {
+                    "player": "jaimo",
+                    "seat": "north",
+                    "point": -53
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "jj1lis",
+                    "seat": "east",
+                    "point": -108
+                },
+                {
+                    "player": "chibi",
+                    "seat": "south",
+                    "point": 4
+                },
+                {
+                    "player": "hiroki",
+                    "seat": "west",
+                    "point": -27
+                },
+                {
+                    "player": "tomii",
+                    "seat": "north",
+                    "point": 131
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "dalong",
+                    "seat": "east",
+                    "point": 52
+                },
+                {
+                    "player": "jaimo",
+                    "seat": "south",
+                    "point": 107
+                },
+                {
+                    "player": "yuanyao",
+                    "seat": "west",
+                    "point": -112
+                },
+                {
+                    "player": "yoteru",
+                    "seat": "north",
+                    "point": -47
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "jj1lis",
+                    "seat": "east",
+                    "point": -176
+                },
+                {
+                    "player": "dalong",
+                    "seat": "south",
+                    "point": 201
+                },
+                {
+                    "player": "hiroki",
+                    "seat": "west",
+                    "point": -117
+                },
+                {
+                    "player": "jaimo",
+                    "seat": "north",
+                    "point": 92
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "yuanyao",
+                    "seat": "east",
+                    "point": 16
+                },
+                {
+                    "player": "tomii",
+                    "seat": "south",
+                    "point": -29
+                },
+                {
+                    "player": "yoteru",
+                    "seat": "west",
+                    "point": 73
+                },
+                {
+                    "player": "chibi",
+                    "seat": "north",
+                    "point": -60
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "yoteru",
+                    "seat": "east",
+                    "point": 87
+                },
+                {
+                    "player": "hiroki",
+                    "seat": "south",
+                    "point": -118
+                },
+                {
+                    "player": "chibi",
+                    "seat": "west",
+                    "point": -71
+                },
+                {
+                    "player": "jaimo",
+                    "seat": "north",
+                    "point": 102
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "dalong",
+                    "seat": "east",
+                    "point": 77
+                },
+                {
+                    "player": "jj1lis",
+                    "seat": "south",
+                    "point": -148
+                },
+                {
+                    "player": "yuanyao",
+                    "seat": "west",
+                    "point": 86
+                },
+                {
+                    "player": "tomii",
+                    "seat": "north",
+                    "point": -15
+                }
+            ]
+        }
+    ]
+}

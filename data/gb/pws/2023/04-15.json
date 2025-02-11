@@ -1,0 +1,248 @@
+{
+    "date": "2023-04-15",
+    "scores": [
+        {
+            "result": [
+                {
+                    "player": "zqmted",
+                    "point": 79
+                },
+                {
+                    "player": "yuanyao",
+                    "point": -80
+                },
+                {
+                    "player": "chibi",
+                    "point": 34
+                },
+                {
+                    "player": "mirai",
+                    "point": -33
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "tomii",
+                    "point": 156
+                },
+                {
+                    "player": "fujino",
+                    "point": 32
+                },
+                {
+                    "player": "dalong",
+                    "point": -171
+                },
+                {
+                    "player": "wei",
+                    "point": -17
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "yuanyao",
+                    "point": 24
+                },
+                {
+                    "player": "dalong",
+                    "point": -17
+                },
+                {
+                    "player": "zqmted",
+                    "point": -95
+                },
+                {
+                    "player": "wei",
+                    "point": 88
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "mirai",
+                    "point": -154
+                },
+                {
+                    "player": "fujino",
+                    "point": 108
+                },
+                {
+                    "player": "tomii",
+                    "point": -67
+                },
+                {
+                    "player": "chibi",
+                    "point": 113
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "zqmted",
+                    "point": 188
+                },
+                {
+                    "player": "fujino",
+                    "point": -192
+                },
+                {
+                    "player": "chibi",
+                    "point": -125
+                },
+                {
+                    "player": "wei",
+                    "point": 129
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "yuanyao",
+                    "point": -59
+                },
+                {
+                    "player": "tomii",
+                    "point": 80
+                },
+                {
+                    "player": "dalong",
+                    "point": 55
+                },
+                {
+                    "player": "mirai",
+                    "point": -76
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "chibi",
+                    "point": -173
+                },
+                {
+                    "player": "mirai",
+                    "point": -115
+                },
+                {
+                    "player": "yuanyao",
+                    "point": 215
+                },
+                {
+                    "player": "zqmted",
+                    "point": 73
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "wei",
+                    "point": -20
+                },
+                {
+                    "player": "chen",
+                    "point": -94
+                },
+                {
+                    "player": "dalong",
+                    "point": 217
+                },
+                {
+                    "player": "tomii",
+                    "point": -103
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "tomii",
+                    "point": -75
+                },
+                {
+                    "player": "wei",
+                    "point": 13
+                },
+                {
+                    "player": "yuanyao",
+                    "point": -146
+                },
+                {
+                    "player": "chibi",
+                    "point": 208
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "chen",
+                    "point": -36
+                },
+                {
+                    "player": "zqmted",
+                    "point": 4
+                },
+                {
+                    "player": "mirai",
+                    "point": 91
+                },
+                {
+                    "player": "dalong",
+                    "point": -59
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "mirai",
+                    "point": 125
+                },
+                {
+                    "player": "zqmted",
+                    "point": -72
+                },
+                {
+                    "player": "yuanyao",
+                    "point": 46
+                },
+                {
+                    "player": "tomii",
+                    "point": -99
+                }
+            ]
+        },
+        {
+            "result": [
+                {
+                    "player": "dalong",
+                    "point": -13
+                },
+                {
+                    "player": "chen",
+                    "point": 41
+                },
+                {
+                    "player": "wei",
+                    "point": -83
+                },
+                {
+                    "player": "chibi",
+                    "point": 55
+                }
+            ]
+        }
+    ],
+    "variant": {
+        "flower": false
+    }
+}
