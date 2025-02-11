@@ -27,6 +27,7 @@ jobs:
       - name: artifact
         uses: actions/upload-artifact@v4
         with:
+          name: github-pages
           path: ./artifact.tar
 
   deploy:
