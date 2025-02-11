@@ -1,5 +1,6 @@
 import dataclasses
 import datetime
+import enum
 import json
 import logging
 import typing
@@ -19,10 +20,25 @@ class PlayerScore:
     point: int
     seat: Seat = None
 
+class ErrorType(enum.Enum):
+    NOT_4_PLAYER = "not 4-player"
+    SEATS_MISMATCH = "seats mismatch"
+    NON_ZERO_SUM = "non-zero-sum points"
+    UNKNOWN = "__UNKNOWN__"
+
+class ErrorHandler(enum.Enum):
+    DROP = "drop"
+    RESUME = "resume"
+    RAISE = "raise"
+
+class ScoreError:
+    message: str = ""
+    handler: typing.Optional[typing.Callable] = None
 
 @dataclasses.dataclass
-class GameScore:
+class InputGameScore:
     result: list[PlayerScore]
+    known_errors: typing.Optional[dict[ErrorType, ErrorHandler]]
 
     def validate(self):
         seats: set[Seat] = set()
@@ -32,15 +48,32 @@ class GameScore:
             seats.add(player_score.seat)
             players.add(player_score.player)
             point_sum += player_score.point
-        errors: list[str] = []
-        if seats != set(("east", "south", "west", "north")) and seats != set([None]):
-            errors.append("seats mismatch")
-        if len(players) != 4:
-            errors.append("not 4-player")
-        if point_sum != 0:
-            errors.append(f"non-zero-sum points: {[player_score.point for player_score in self.result]}")
-        return errors
 
+        found_errors: list[ErrorType] = []
+        if seats != set(("east", "south", "west", "north")) and seats != set([None]):
+            found_errors.append(ErrorType.SEATS_MISMATCH)
+        if len(players) != 4:
+            found_errors.append(ErrorType.NOT_4_PLAYER)
+        if point_sum != 0:
+            found_errors.append(ErrorType.NON_ZERO_SUM)
+
+        for found_error in found_errors:
+            if not (self.known_errors and found_error in self.known_errors):
+                raise ValueError(f"Error found: {found_error}")
+        if self.known_errors:
+            for known_error in self.known_errors:
+                if known_error not in found_errors:
+                    raise ValueError(f"Expected error not found: {known_error}")
+                handler = self.known_errors[known_error]
+                if handler == ErrorHandler.RAISE:
+                    raise ValueError(f"Error found: {known_error}")
+                logger.warning(f"Error found: {known_error}")
+        return ValidatedGameScore(self.result, self.known_errors)
+
+@dataclasses.dataclass
+class ValidatedGameScore():
+    result: list[PlayerScore]
+    errors: typing.Optional[dict[ErrorType, typing.Literal[ErrorHandler.DROP, ErrorHandler.RESUME]]]
 
 @dataclasses.dataclass
 class Variant:
@@ -48,29 +81,43 @@ class Variant:
     reseat: typing.Optional[typing.Literal[1, 3]]
 
 @dataclasses.dataclass
-class SetScore:
+class InputSetScore:
     date: typing.Optional[datetime.date]
     variant: typing.Optional[Variant]
-    scores: list[GameScore]
+    scores: list[InputGameScore]
 
     def validate(self):
+        vss: list[ValidatedGameScore] = []
         for i, score in enumerate(self.scores):
-            errors = score.validate()
-            for error in errors:
-                logger.warning(f"{self.date}[{i}]: {error}")
+            try:
+                vs = score.validate()
+            except ValueError as e:
+                logger.error(f"{self.date}[{i}]: {e}")
+                raise
+            if vs.errors:
+                logger.warning(f"{self.date}[{i}]: {vs.errors}")
+            vss.append(vs)
+        return ValidatedSetScore(self.date, self.variant, vss)
+
+@dataclasses.dataclass
+class ValidatedSetScore:
+    date: typing.Optional[datetime.date]
+    variant: typing.Optional[Variant]
+    scores: list[ValidatedGameScore]
 
 
-
-def read_json_validate(filename: str):
+def read_json_validate(filename: str) -> ValidatedSetScore:
     data = json.load(open(filename))
-    score = dacite.from_dict(
-        SetScore,
+    score: InputSetScore = dacite.from_dict(
+        InputSetScore,
         data,
-        config=dacite.Config(type_hooks={datetime.date: datetime.date.fromisoformat}),
+        config=dacite.Config(type_hooks={
+            datetime.date: datetime.date.fromisoformat,
+            ErrorType: ErrorType,
+            ErrorHandler: ErrorHandler,
+        }),
     )
-    score.validate()
-    logger.info(score)
-    return score
+    return score.validate()
 
 @dataclasses.dataclass(order=True)
 class PersonalDayResult:
@@ -87,7 +134,7 @@ class DayResult:
     scores: list[PersonalDayResult]
 
     @classmethod
-    def from_set_score(cls, set_score: SetScore):
+    def from_set_score(cls, set_score: ValidatedSetScore):
         ret: dict[str, PersonalDayResult] = {}
         for game_score in set_score.scores:
             tp12s = get_tp12([player_score.point for player_score in game_score.result])

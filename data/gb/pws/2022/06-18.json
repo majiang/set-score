@@ -13,7 +13,7 @@
       {"player": "yuanyao", "seat": "east", "point": -181},
       {"player": "chibi", "seat": "west", "point": 19},
       {"player": "dalong", "seat": "north", "point": 73}
-    ]},
+    ], "known_errors": {"non-zero-sum points": "drop"}},
     {"result": [
       {"player": "tomii", "seat": "south","point": -116},
       {"player": "yuanyao", "seat": "north", "point": 156},
