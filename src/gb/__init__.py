@@ -33,7 +33,7 @@ class GameScore:
             players.add(player_score.player)
             point_sum += player_score.point
         errors: list[str] = []
-        if seats != set(("east", "south", "west", "north")) and seats != set(None):
+        if seats != set(("east", "south", "west", "north")) and seats != set([None]):
             errors.append("seats mismatch")
         if len(players) != 4:
             errors.append("not 4-player")
