@@ -32,9 +32,14 @@ class GameScore:
             seats.add(player_score.seat)
             players.add(player_score.player)
             point_sum += player_score.point
-        assert seats == set(("east", "south", "west", "north")) or seats == set(None)
-        assert len(players) == 4
-        assert point_sum == 0, f"non-zero-sum points: {[player_score.point for player_score in self.result]}"
+        errors: list[str] = []
+        if seats != set(("east", "south", "west", "north")) and seats != set(None):
+            errors.append("seats mismatch")
+        if len(players) != 4:
+            errors.append("not 4-player")
+        if point_sum != 0:
+            errors.append(f"non-zero-sum points: {[player_score.point for player_score in self.result]}")
+        return errors
 
 
 @dataclasses.dataclass
@@ -49,8 +54,10 @@ class SetScore:
     scores: list[GameScore]
 
     def validate(self):
-        for score in self.scores:
-            score.validate()
+        for i, score in enumerate(self.scores):
+            errors = score.validate()
+            for error in errors:
+                logger.warning(f"{self.date}[{i}]: {error}")
 
 
 
