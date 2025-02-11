@@ -106,9 +106,9 @@ class ValidatedSetScore:
     scores: list[ValidatedGameScore]
 
 
-def read_json_validate(filename: str) -> ValidatedSetScore:
+def from_json_file(filename: str) -> InputSetScore:
     data = json.load(open(filename))
-    score: InputSetScore = dacite.from_dict(
+    return dacite.from_dict(
         InputSetScore,
         data,
         config=dacite.Config(type_hooks={
@@ -117,7 +117,6 @@ def read_json_validate(filename: str) -> ValidatedSetScore:
             ErrorHandler: ErrorHandler,
         }),
     )
-    return score.validate()
 
 @dataclasses.dataclass(order=True)
 class PersonalDayResult:
